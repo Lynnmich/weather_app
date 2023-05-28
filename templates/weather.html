@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Weather App</title>
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>{{ city }}</h1>
+        <div class="day">
+            <h2>{{ day }}</h2> 
+        </div>
+        <div class="weather-info">
+            <div class="info-container">
+                <h2>Temperature</h2>
+                <p class="temperature">{{ temperature }}°C</p>
+            </div>
+
+            <div class="info-container">
+                <h2>Description</h2>
+                <p class="description">{{ description }}</p>
+            </div>
+
+            <div class="info-container">
+                <h2>Current time</h2>
+                <p class="current_time">{{ current_time }}</p>
+            </div>
+
+            <div class="info-container">
+                <h2>Zone</h2>
+                <p class="current_time_zone"></p>{{ current_time_zone }}</p>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
